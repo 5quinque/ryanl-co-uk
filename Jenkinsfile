@@ -6,10 +6,12 @@ pipeline {
 
   }
   environment {
-    DATABASE_HOST = "localhsot"
+    DB_CREDENTIALS = credentials('ryanl')
+
+    DATABASE_HOST = "192.168.0.52"
     DATABASE_NAME = "ryanl"
-    DATABASE_USER = "root"
-    DATABASE_PASS = "rootpass"
+    DATABASE_USER = "${DB_CREDENTIALS_USR}"
+    DATABASE_PASS = "${DB_CREDENTIALS_PSW}"
   }
   stages {
     stage('Build') {
@@ -22,12 +24,6 @@ pipeline {
     }
 
     stage('Test') {
-      agent {
-          docker {
-            image 'mariadb'
-            args '-e MYSQL_ROOT_PASSWORD=rootpass'
-          }
-      }
       steps {
         withEnv(["HOME=${env.WORKSPACE}"]) {
           sh '$HOME/.local/bin/pipenv run python manage.py test'
