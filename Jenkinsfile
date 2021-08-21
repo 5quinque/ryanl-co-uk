@@ -10,7 +10,7 @@ pipeline {
       steps {
         withEnv(["HOME=${env.WORKSPACE}"]) {
           sh 'pip install pipenv'
-          sh 'pipenv install --deploy --ignore-pipfile'
+          sh '$HOME/.local/bin/pipenv install --deploy --ignore-pipfile'
         }
       }
     }
