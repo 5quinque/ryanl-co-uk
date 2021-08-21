@@ -3,10 +3,10 @@ pipeline {
     docker {
       image 'python:3.9'
     }
-
   }
+
   environment {
-    DB_CREDENTIALS = credentials('ryanl')
+    DB_CREDENTIALS = credentials('ryanl-mariadb')
 
     DATABASE_HOST = "192.168.0.52"
     DATABASE_NAME = "ryanl"
