@@ -17,7 +17,9 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh 'python manage.py test'
+        withEnv(["HOME=${env.WORKSPACE}"]) {
+          sh 'HOME/.local/bin/pipenv run python manage.py test'
+        }
       }
     }
 
