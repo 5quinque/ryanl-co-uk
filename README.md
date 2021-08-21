@@ -30,3 +30,9 @@ pipenv shell
 ```bash
 pre-commit install
 ```
+
+Update linter and formatting tools by running this command
+
+```bash
+pre-commit autoupdate
+```
