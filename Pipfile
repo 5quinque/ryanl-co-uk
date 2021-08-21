@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 django = "*"
 gunicorn = "*"
+django-environ = "*"
+mysqlclient = "*"
+pre-commit = "*"
 
 [dev-packages]
 
