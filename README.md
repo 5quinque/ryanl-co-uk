@@ -4,11 +4,15 @@
 
 ```bash
 docker build --tag ryanl .
-docker run -e DATABASE_HOST=db_host \
+docker run --name web-ryanl \
+    -e DATABASE_HOST=db_host \
     -e DATABASE_NAME=db_name \
     -e DATABASE_USER=db_user \
     -e DATABASE_PASS=db_password \
-    -d -p 5000:5000 ryanl
+    -e VIRTUAL_HOST=ryanl.co.uk,www.ryanl.co.uk \
+    -e LETSENCRYPT_HOST=ryanl.co.uk,www.ryanl.co.uk \
+    --net web \
+    -d ryanl
 ```
 
 ## Dev

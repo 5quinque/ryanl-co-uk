@@ -9,6 +9,6 @@ COPY . .
 RUN pip install pipenv
 RUN pipenv install --system --deploy --ignore-pipfile
 
-EXPOSE 5000/tcp
+EXPOSE 80/tcp
 
-CMD ["gunicorn", "ryanl.wsgi", "--log-file", "-", "-b", "0.0.0.0:5000"]
+CMD ["gunicorn", "ryanl.wsgi", "--log-file", "-", "-b", "0.0.0.0:80"]

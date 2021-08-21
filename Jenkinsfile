@@ -8,8 +8,10 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'pip install pipenv'
-        sh 'pipenv install --deploy --ignore-pipfile'
+        withEnv(["HOME=${env.WORKSPACE}"]) {
+          sh 'pip install pipenv'
+          sh 'pipenv install --deploy --ignore-pipfile'
+        }
       }
     }
 
