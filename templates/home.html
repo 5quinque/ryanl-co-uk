@@ -1,5 +1,17 @@
 {% extends 'base.html' %}
-
 {% block content %}
-<h1>Homepage</h1>
+<h2>Projects</h2>
+{% if projects %}
+<section name="projects">
+    {% for project in projects %}
+  <p>
+  <i class="{{ project.language.css_class_text }}"></i>
+  <a href="{{ project.url_text }}">{{ project.name_text }}</a> - {{ project.description_text }} 
+  </p>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No.</p>
+{% endif %}
+</section>
 {% endblock content %}

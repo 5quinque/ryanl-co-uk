@@ -1,6 +1,19 @@
-<header>
-  <a href="{% url 'home' %}">Home</a>
-</header>
-
+<!DOCTYPE html>
+<head>
+<title>Ryan L</title>
+{% load static %}
+<link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'css/ryanl.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+<h1 id="header">Ryan Linnit</h1>
+<hr>
 {% block content %}
 {% endblock %}
+<hr>
+<section name="footer" id="footer">
+&copy; {% now "Y" %} Ryan Linnit - contact ryan @ this domain
+</section>
+</body>
+</html>
