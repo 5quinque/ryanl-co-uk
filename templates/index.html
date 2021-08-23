@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Projects</h2>
+{% if projects %}
+<section name="projects">
+    {% for project in projects %}
+  <div class="project">
+    <h3><i class="{{ project.language.css_class_text }}"></i> <a href="">{{ project.name_text }}</a></h3>
+    <p>{{ project.description_text }}</p>
+    <div>
+      <a href="{{ project.github_url_text }}"><i class="devicon-github-original colored"></i></a>
+      {% if project.demo_url_text %}
+      <a href="{{ project.demo_url_text }}"><i class="devicon-firefox-plain colored"></i></a>
+      {% endif %}
+    </div>
+  </div>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No projects.</p>
+{% endif %}
+</section>
+{% endblock content %}

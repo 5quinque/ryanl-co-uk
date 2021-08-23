@@ -40,3 +40,7 @@ hr {
 .two {
     flex: 2 1 auto;
 }
+
+.project {
+    border-bottom: 1px solid #494949;
+}

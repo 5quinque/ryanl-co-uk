@@ -11,7 +11,8 @@ class Language(models.Model):
 
 class Project(models.Model):
     name_text = models.CharField(max_length=200)
-    url_text = models.CharField(max_length=200)
+    github_url_text = models.CharField(max_length=200)
+    demo_url_text = models.CharField(max_length=200, blank=True)
     description_text = models.TextField()
     pub_date = models.DateTimeField("date published")
     language = models.ForeignKey(Language, on_delete=models.PROTECT)
