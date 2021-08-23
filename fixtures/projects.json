@@ -1,0 +1,185 @@
+[
+{
+ "model": "projects.language",
+ "pk": 1,
+ "fields": {
+  "name_text": "Symfony",
+  "css_class_text": "devicon-symfony-plain colored"
+ }
+},
+{
+ "model": "projects.language",
+ "pk": 2,
+ "fields": {
+  "name_text": "Python",
+  "css_class_text": "devicon-python-plain colored"
+ }
+},
+{
+ "model": "projects.language",
+ "pk": 3,
+ "fields": {
+  "name_text": "C",
+  "css_class_text": "devicon-c-plain colored"
+ }
+},
+{
+ "model": "projects.language",
+ "pk": 4,
+ "fields": {
+  "name_text": "PHP",
+  "css_class_text": "devicon-php-plain colored"
+ }
+},
+{
+ "model": "projects.language",
+ "pk": 5,
+ "fields": {
+  "name_text": "JavaScript",
+  "css_class_text": "devicon-javascript-plain colored"
+ }
+},
+{
+ "model": "projects.project",
+ "pk": 1,
+ "fields": {
+  "name_text": "2048",
+  "github_url_text": "https://github.com/linnit/2048",
+  "demo_url_text": "https://2048.ryanl.co.uk/",
+  "description_text": "A clone of the game '2048'.",
+  "pub_date": "2021-08-23T19:34:09Z",
+  "language": 5,
+  "order": 0
+ }
+},
+{
+ "model": "projects.project",
+ "pk": 2,
+ "fields": {
+  "name_text": "Sudoku",
+  "github_url_text": "https://github.com/linnit/sudoku",
+  "demo_url_text": "https://ryanl.co.uk/sudoku",
+  "description_text": "Sudoku made in JavaScript. Includes a solver and puzzle maker.",
+  "pub_date": "2021-08-23T19:34:43Z",
+  "language": 5,
+  "order": 0
+ }
+},
+{
+ "model": "projects.project",
+ "pk": 3,
+ "fields": {
+  "name_text": "gameoflife",
+  "github_url_text": "https://github.com/linnit/gameoflife",
+  "demo_url_text": "",
+  "description_text": "Conway's game of life written in C",
+  "pub_date": "2021-08-23T19:36:01Z",
+  "language": 3,
+  "order": 0
+ }
+},
+{
+ "model": "projects.project",
+ "pk": 4,
+ "fields": {
+  "name_text": "csnake",
+  "github_url_text": "https://github.com/linnit/csnake",
+  "demo_url_text": "",
+  "description_text": "A snake game made in C, using ncurses",
+  "pub_date": "2021-08-23T20:01:25Z",
+  "language": 3,
+  "order": 0
+ }
+},
+{
+ "model": "projects.project",
+ "pk": 5,
+ "fields": {
+  "name_text": "ifyt",
+  "github_url_text": "https://github.com/linnit/ifyt",
+  "demo_url_text": "",
+  "description_text": "Print images in any terminal supporting colours",
+  "pub_date": "2021-08-23T20:01:48Z",
+  "language": 3,
+  "order": 0
+ }
+},
+{
+ "model": "projects.project",
+ "pk": 6,
+ "fields": {
+  "name_text": "pyPassGen",
+  "github_url_text": "https://github.com/linnit/pyPassGen",
+  "demo_url_text": "",
+  "description_text": "Securely generate random passwords",
+  "pub_date": "2021-08-23T20:02:13Z",
+  "language": 2,
+  "order": 0
+ }
+},
+{
+ "model": "projects.project",
+ "pk": 7,
+ "fields": {
+  "name_text": "pyGOL",
+  "github_url_text": "https://github.com/linnit/pyGOL",
+  "demo_url_text": "",
+  "description_text": "Conway's game of life written in Python",
+  "pub_date": "2021-08-23T20:02:45Z",
+  "language": 2,
+  "order": 0
+ }
+},
+{
+ "model": "projects.project",
+ "pk": 8,
+ "fields": {
+  "name_text": "Soundcloud-Downloader",
+  "github_url_text": "https://github.com/linnit/Soundcloud-Downloader",
+  "demo_url_text": "",
+  "description_text": "Download songs from SoundCloud, even if the song is not available for download",
+  "pub_date": "2021-08-23T20:03:17Z",
+  "language": 2,
+  "order": 0
+ }
+},
+{
+ "model": "projects.project",
+ "pk": 9,
+ "fields": {
+  "name_text": "Wiki",
+  "github_url_text": "https://github.com/linnit/Wiki",
+  "demo_url_text": "https://init5.uk/",
+  "description_text": "A wiki",
+  "pub_date": "2021-08-23T20:03:51Z",
+  "language": 1,
+  "order": 0
+ }
+},
+{
+ "model": "projects.project",
+ "pk": 10,
+ "fields": {
+  "name_text": "marky",
+  "github_url_text": "https://github.com/linnit/marky",
+  "demo_url_text": "",
+  "description_text": "Using markov chains to generate 'unique' text",
+  "pub_date": "2021-08-23T20:04:04Z",
+  "language": 1,
+  "order": 0
+ }
+},
+{
+ "model": "projects.project",
+ "pk": 11,
+ "fields": {
+  "name_text": "2kanna",
+  "github_url_text": "https://github.com/linnit/2kanna",
+  "demo_url_text": "https://2kanna.org",
+  "description_text": "An imageboard",
+  "pub_date": "2021-08-23T20:04:33Z",
+  "language": 1,
+  "order": 0
+ }
+}
+]

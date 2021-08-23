@@ -9,6 +9,7 @@ gunicorn = "*"
 django-environ = "*"
 mysqlclient = "*"
 pre-commit = "*"
+whitenoise = "*"
 
 [dev-packages]
 
