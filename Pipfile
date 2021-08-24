@@ -9,7 +9,6 @@ gunicorn = "*"
 django-environ = "*"
 pre-commit = "*"
 whitenoise = "*"
-django-heroku = "*"
 
 [dev-packages]
 

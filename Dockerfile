@@ -6,12 +6,11 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install pipenv
-RUN pipenv install --system --deploy --ignore-pipfile
+RUN pip install pipenv && \
+    pipenv install --system --deploy --ignore-pipfile
 
 CMD ["pipenv", "run", "python", "manage.py", "migrate"]
 CMD ["pipenv", "run", "python", "manage.py", "loaddata", "fixtures/projects.json"]
-
 CMD ["pipenv", "run", "python", "manage.py", "collectstatic"]
 
 EXPOSE 80/tcp
