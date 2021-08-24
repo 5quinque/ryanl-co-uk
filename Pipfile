@@ -7,9 +7,9 @@ name = "pypi"
 django = "*"
 gunicorn = "*"
 django-environ = "*"
-mysqlclient = "*"
 pre-commit = "*"
 whitenoise = "*"
+django-heroku = "*"
 
 [dev-packages]
 
