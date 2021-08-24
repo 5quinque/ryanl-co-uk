@@ -6,12 +6,7 @@ pipeline {
   }
 
   environment {
-    DB_CREDENTIALS = credentials('ryanl-mariadb')
-
-    DATABASE_HOST = "192.168.0.52"
-    DATABASE_NAME = "ryanl"
-    DATABASE_USER = "${DB_CREDENTIALS_USR}"
-    DATABASE_PASS = "${DB_CREDENTIALS_PSW}"
+    SECRET_KEY = "jenkins-test-secret-key"
   }
   stages {
     stage('Build') {
