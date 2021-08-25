@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{ project.name_text }}</h2>
+<section name="project">
+  <p>{{ project.description_text }}</p>
+  <div>
+    <a href="{{ project.github_url_text }}"><i class="devicon-github-original colored"></i></a>
+    {% if project.demo_url_text %}
+    <a href="{{ project.demo_url_text }}"><i class="devicon-firefox-plain colored"></i></a>
+    {% endif %}
+  </div>
+</section>
+{% endblock content %}
